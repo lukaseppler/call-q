@@ -16,6 +16,7 @@ group :development, :test do
   gem 'cucumber', '>= 0.9.4'
   gem 'cucumber-rails', '>= 0.3.0'
   gem 'database_cleaner'
+  gem 'factory_girl_rails'
   gem 'launchy'
   gem 'rspec', '>= 2.4.0'
   gem 'rspec-rails', '>= 2.4.1'
