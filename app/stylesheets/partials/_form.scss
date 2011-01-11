@@ -2,5 +2,11 @@
 // a class of "bp". This makes it easier to style
 // forms from scratch if you need to.
 
-form.bp {
+#content form {
   @include blueprint-form; }
+
+#flash_notice {
+  @include notice; }
+
+#flash_error {
+  @include error; }

@@ -21,10 +21,15 @@
             = link_to "Sign out", destroy_user_session_path
           - else
             = link_to "Sign in", new_user_session_path
-            Not registered yet?
+            |
             = link_to "Sign up", new_user_registration_path
-      %section#content
+        %h1 Call-Q
+      #content
         #notification
           - flash.each do |name, msg|
             = content_tag :div, msg, :id => "flash_#{name}"
         = yield
+
+      %footer
+        Copyright &copy; 2011
+        %a{:href => "http://www.simplificator.com"} Simplificator
