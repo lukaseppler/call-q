@@ -571,7 +571,7 @@ body.call-q #content {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 950px;
+  width: 630px;
 }
 /* line 138, ../../../../../../.rvm/gems/ruby-1.9.2-p136@ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.call-q #content {
@@ -609,4 +609,10 @@ body.call-q #content {
 #user-navigation {
   float: right;
   white-space: no-wrap;
+}
+
+/* line 1, ../../app/stylesheets/partials/_sidebar.scss */
+#sidebar {
+  margin-left: -2px;
+  background: #b1b12c;
 }

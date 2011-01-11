@@ -33,8 +33,8 @@ body.call-q {
     @include column($sidebar-columns); }
   #content {
     padding-top: 30px;
-    // $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    $content-columns: 24;
+    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
+    //$content-columns: 24;
     // true means it's the last column in the row
     @include column($content-columns, true); } }
 
