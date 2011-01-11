@@ -21,9 +21,11 @@
 //    |        #footer         |
 //    +--------+---------------+
 
-body.two-col {
+body.call-q {
   #container {
     @include container; }
+  & > header {
+    @include column($blueprint-grid-columns); }
   #header, #footer {
     @include column($blueprint-grid-columns); }
   #sidebar {
