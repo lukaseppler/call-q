@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+%html
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1'}
+    %meta{:name => "description", :content => "Phone call TODO list"}
+    %meta{:name => "author", :content => "Simplificator"}
+    %title CallQ
+    = stylesheet_link_tag "screen", :media => "screen, projection"
+    = stylesheet_link_tag "print",  :media => "print"
+    /[if IE]
+      = stylesheet_link_tag "ie", :media => "screen, projection"
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body.callq
+    #container
+      %section#main
+        = yield
