@@ -8,5 +8,5 @@
 #flash_notice {
   @include notice; }
 
-#flash_error {
+#flash_alert, #flash_error {
   @include error; }

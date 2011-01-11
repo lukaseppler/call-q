@@ -519,7 +519,7 @@ body.call-q form.inline p {
 }
 
 /* line 11, ../../app/stylesheets/partials/_form.scss */
-#flash_error {
+#flash_alert, #flash_error {
   padding: 0.8em;
   margin-bottom: 1em;
   border: 2px solid #dddddd;
@@ -528,7 +528,7 @@ body.call-q form.inline p {
   border-color: #fbc2c4;
 }
 /* line 29, ../../../../../../.rvm/gems/ruby-1.9.2-p136@ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
-#flash_error a {
+#flash_alert a, #flash_error a {
   color: #8a1f11;
 }
 
