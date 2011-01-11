@@ -5,6 +5,7 @@ gem 'haml'
 gem 'mongoid', '2.0.0.rc.3'
 
 gem 'bson_ext', '1.1.5'
+gem 'devise'
 
 group :development do
   gem 'compass'
