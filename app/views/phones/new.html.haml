@@ -1,0 +1,7 @@
+%h1 Who do you want to call?
+
+= form_for @phone do |f|
+  = f.phone_field :number, :placeholder => "Hint: try your own mobile",
+      :autofocus => true
+  %br
+  = f.submit "Call"

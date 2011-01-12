@@ -1,0 +1,6 @@
+%h1 Make that call!
+- if @phone.name
+  %b Name
+  %br=  @phone.name
+
+= link_to "Call #{@phone.number}", "call-to://#{@phone.number}", :id => "call-button"
