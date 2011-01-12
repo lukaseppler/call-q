@@ -1,6 +1,7 @@
 CallQ::Application.routes.draw do
   devise_for :users
-  root :to => "phone_calls#index"
+  root :to => "phones#new"
+  resources :phones
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
