@@ -8,7 +8,7 @@ Feature: Calling a phone
 
   Scenario: Make a Call
     When I go to the homepage
-    And I fill in "phone_number[number]" with "+411 111 1111"
+    And I fill in "phone_number" with "+411 111 1111"
     And I press "Call"
-    Then I should see "The phone number has been stored."
-    And I should see "Please click below to call"
+    Then I should see "Phone number has been stored"
+    And I should see "Call"
