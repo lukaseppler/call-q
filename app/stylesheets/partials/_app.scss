@@ -1,0 +1,33 @@
+#container header > h1 {
+  @include alt; }
+
+#call-button {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px 8px 20px;
+  letter-spacing: 1.5px;
+  color: #eeb;
+  @include border-radius(5px);
+  @include box-shadow(silver);
+  @include text-shadow(black);
+  padding-left: 40px;
+  background-image: url(../images/phone.png),
+    -webkit-gradient(linear, left top, left bottom,
+      from(darken($primary-background-color, 60%)),
+      to(darken($primary-background-color, 80%))) !important;
+  background-image: url(../images/phone.png),
+    -moz-linear-gradient(top, darken($primary-background-color, 60%),
+                              darken($primary-background-color, 80%));
+
+
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  background-color: darken($primary-background-color, 60%);
+  }
+
+
+#content {
+  text-align: center; }

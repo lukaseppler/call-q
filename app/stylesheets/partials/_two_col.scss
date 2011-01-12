@@ -29,14 +29,15 @@ body.call-q {
     @include column($blueprint-grid-columns); }
   #sidebar {
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns); }
+    $sidebar-columns: floor(($blueprint-grid-columns - 1) / 3);
+    @include column($sidebar-columns, true); }
   #content {
-    padding-top: 30px;
+    //padding-top: 30px;
     $content-columns: ceil(2 * $blueprint-grid-columns / 3);
     //$content-columns: 24;
     // true means it's the last column in the row
-    @include column($content-columns, true); } }
+    @include column($content-columns);
+    @include append(1); } }
 
 #container > header {
   @include column($blueprint-grid-columns); }

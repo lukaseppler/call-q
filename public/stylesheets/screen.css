@@ -532,6 +532,54 @@ body.call-q form.inline p {
   color: #8a1f11;
 }
 
+/* line 15, ../../app/stylesheets/partials/_form.scss */
+#new_phone input[type='tel'] {
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 300px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+  border: none;
+  padding: 5px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #eeeebb), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(top, #eeeebb 0%, #ffffff 100%);
+  background-image: linear-gradient(top, #eeeebb 0%, #ffffff 100%);
+}
+/* line 28, ../../app/stylesheets/partials/_form.scss */
+#new_phone #phone_submit {
+  margin-top: 30px;
+  padding: 10px 50px 10px 50px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+  text-shadow: black 1px 1px 1px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #5f5f18), color-stop(100%, #0e0e03));
+  background-image: -moz-linear-gradient(top, #5f5f18 0%, #0e0e03 100%);
+  background-image: linear-gradient(top, #5f5f18 0%, #0e0e03 100%);
+}
+
 /* line 24, ../../app/stylesheets/partials/_two_col.scss */
 body.call-q {
   margin-top: 15px;
@@ -558,8 +606,8 @@ body.call-q #header, body.call-q #footer {
 body.call-q #sidebar {
   display: inline;
   float: left;
-  margin-right: 10px;
-  width: 310px;
+  margin-right: 0;
+  width: 270px;
 }
 /* line 138, ../../../../../../.rvm/gems/ruby-1.9.2-p136@call-q/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.call-q #sidebar {
@@ -567,18 +615,18 @@ body.call-q #sidebar {
 }
 /* line 34, ../../app/stylesheets/partials/_two_col.scss */
 body.call-q #content {
-  padding-top: 30px;
   display: inline;
   float: left;
-  margin-right: 0;
+  margin-right: 10px;
   width: 630px;
+  padding-right: 40px;
 }
 /* line 138, ../../../../../../.rvm/gems/ruby-1.9.2-p136@call-q/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.call-q #content {
   overflow-x: hidden;
 }
 
-/* line 41, ../../app/stylesheets/partials/_two_col.scss */
+/* line 42, ../../app/stylesheets/partials/_two_col.scss */
 #container > header {
   display: inline;
   float: left;
@@ -590,7 +638,7 @@ body.call-q #content {
   overflow-x: hidden;
 }
 
-/* line 44, ../../app/stylesheets/partials/_two_col.scss */
+/* line 45, ../../app/stylesheets/partials/_two_col.scss */
 #container > footer {
   display: inline;
   float: left;
@@ -632,10 +680,12 @@ body.call-q #content {
   background-image: linear-gradient(top, #888822 0%, #eeeebb 100%);
 }
 /* line 9, ../../app/stylesheets/partials/_sidebar.scss */
-#sidebar h2 {
+#sidebar h3 {
   background: #5f5f18;
   display: block;
   color: white;
+  padding: 5px 0px 5px 0px;
+  text-shadow: #444444 1px 1px 1px;
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
@@ -648,4 +698,46 @@ body.call-q #content {
   -ms-border-top-right-radius: 5px;
   -khtml-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+/* line 1, ../../app/stylesheets/partials/_app.scss */
+#container header > h1 {
+  color: #666666;
+  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 4, ../../app/stylesheets/partials/_app.scss */
+#call-button {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px 8px 20px;
+  letter-spacing: 1.5px;
+  color: #eeb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: silver 1px 1px 5px 0;
+  -webkit-box-shadow: silver 1px 1px 5px 0;
+  -o-box-shadow: silver 1px 1px 5px 0;
+  box-shadow: silver 1px 1px 5px 0;
+  text-shadow: black 1px 1px 1px;
+  padding-left: 40px;
+  background-image: url(../images/phone.png), -webkit-gradient(linear, left top, left bottom, from(#5f5f18), to(#0e0e03)) !important;
+  background-image: url(../images/phone.png), -moz-linear-gradient(top, #5f5f18, #0e0e03);
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  background-color: #5f5f18;
+}
+
+/* line 32, ../../app/stylesheets/partials/_app.scss */
+#content {
+  text-align: center;
 }

@@ -30,8 +30,11 @@
             = content_tag :div, msg, :id => "flash_#{name}"
         = yield
       #sidebar
+        %h3 Next Actions
         - if user_signed_in?
           Your next actions will go here
+        - else
+          You might want to sign in now to make calls!
       %footer
         Copyright &copy; 2011
         %a{:href => "http://www.simplificator.com"} Simplificator
