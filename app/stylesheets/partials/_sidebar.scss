@@ -1,3 +1,14 @@
 #sidebar {
+  min-height: 320px;
+  text-align: center;
   margin-left: -2px;
-  background: darken(#eeb, 40%); }
+  background: darken(#eeb, 40%);
+  @include border-radius(5px);
+  @include box-shadow;
+  @include linear-gradient(color-stops(darken(#eeb, 50%), #eeb));
+  h2 {
+     background: darken(#eeb, 60%);
+     display: block;
+     color: white;
+     @include border-top-radius(5px);
+  } }
