@@ -10,4 +10,15 @@ Feature: Calling a phone
     When I go to the homepage
     And I fill in "phone_number" with "+411 111 1111"
     And I press "Call"
-    Then I should see "Call +411 111 1111"
+    Then I should see "Call +41 11 111 11 1"
+
+  Scenario Outline: System normalizes phone numbers
+    When I go to the homepage
+    And I fill in "phone_number" with "<phone_number>"
+    And I press "Call"
+    Then I should see "Call <formatted_phone>"
+
+    Examples: Full number prefixed and separated with spaces
+      | phone_number     | formatted_phone |
+      | +41 76373 0787   | +41 76 373 07 87 |
+      | +41 76 373 07 87 | +41 76 373 07 87 |
