@@ -4,3 +4,16 @@
   %br=  @phone.name
 
 = link_to "Call #{formatted_phone @phone.number}", "callto://#{@phone.number}", :id => "call-button"
+
+%p
+%h2 Notes
+- if @phone.notes.size > 0
+  - for note in @phone.notes.size
+    %p
+      = note.created_at
+      = note.content
+- else
+  You haven't added a note yet!
+
+%br
+= link_to "Add a note", "#"

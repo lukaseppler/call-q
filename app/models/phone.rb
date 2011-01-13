@@ -8,6 +8,8 @@ class Phone
   key :number
   index :number
 
+  embeds_many :notes
+
   before_create :normalize_phone
 
   validates_format_of :number, :with => /[0-9\- \(\)\+]/
