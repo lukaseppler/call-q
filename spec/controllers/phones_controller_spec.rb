@@ -36,7 +36,10 @@ describe PhonesController do
         }.to change(Phone, :count).by(1)
       end
 
-      it "redirects to the show page"
+      it "redirects to the show page" do
+        post :create, :phone => @phone
+        response.should redirect_to(phone_path(normalized_phone @phone[:number]))
+      end
     end
   end
 

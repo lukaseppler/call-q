@@ -24,3 +24,7 @@ RSpec.configure do |config|
     end.each(&:drop)
   end
 end
+
+def normalized_phone(number)
+  Phony.normalize(number)
+end
