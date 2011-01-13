@@ -13,6 +13,7 @@ class Phone
   before_create :normalize_phone
 
   validates_format_of :number, :with => /[0-9\- \(\)\+]/
+  accepts_nested_attributes_for :notes
 
   private
   def normalize_phone
