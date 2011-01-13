@@ -94,6 +94,7 @@ GEM
       tzinfo (~> 0.3.22)
       will_paginate (~> 3.0.pre)
     nokogiri (1.4.4)
+    phony (1.2.4)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -162,6 +163,7 @@ DEPENDENCIES
   haml
   launchy
   mongoid (= 2.0.0.rc.3)
+  phony
   rails (= 3.0.3)
   rspec (>= 2.4.0)
   rspec-rails (>= 2.4.1)
