@@ -1,10 +1,12 @@
 #notes
   %h2 Notes
   - if phone.notes.size > 0
-    - for note in phone.notes
-      %p
-        %i= "#{distance_of_time_in_words_to_now(note.created_at)} ago"
-        = note.content
+    %ul
+      - for note in phone.notes
+        %li
+          = note.content
+          .creation_time= "#{distance_of_time_in_words_to_now(note.created_at)} ago"
+
   - else
     You haven't added a note yet!
 
