@@ -7,7 +7,6 @@ Feature: Notes
     Given I am on the homepage
     When I call "+41 67374 8787"
     Then I should see "Notes"
-    And I should see "Add a note"
 
   Scenario: Create a note
     Given I am on the homepage
