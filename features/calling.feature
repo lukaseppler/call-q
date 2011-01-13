@@ -10,5 +10,4 @@ Feature: Calling a phone
     When I go to the homepage
     And I fill in "phone_number" with "+411 111 1111"
     And I press "Call"
-    Then I should see "Phone number has been stored"
-    And I should see "Call"
+    Then I should see "Call +411 111 1111"

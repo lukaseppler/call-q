@@ -36,11 +36,6 @@ describe PhonesController do
         }.to change(Phone, :count).by(1)
       end
 
-      it "sets the flash" do
-        post :create, :phone => @phone
-        flash[:notice].should =~ /Phone number has been stored/
-      end
-
       it "redirects to the show page"
     end
   end

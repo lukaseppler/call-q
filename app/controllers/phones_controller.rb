@@ -6,7 +6,7 @@ class PhonesController < ApplicationController
   def create
     @phone = Phone.new(params[:phone])
     @phone.save
-    redirect_to @phone, :notice => "Phone number has been stored"
+    redirect_to @phone
   end
 
   def show
