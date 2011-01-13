@@ -1,7 +1,6 @@
 #sidebar {
   min-height: 320px;
   text-align: center;
-  margin-left: -2px;
   background: darken(#eeb, 40%);
   @include border-radius(5px);
   @include box-shadow;

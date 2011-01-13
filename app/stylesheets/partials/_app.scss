@@ -22,7 +22,7 @@
       to(darken($primary-background-color, 80%))) !important;
   background-image: url(../images/phone.png),
     -moz-linear-gradient(top, darken($primary-background-color, 60%),
-                              darken($primary-background-color, 80%));
+			      darken($primary-background-color, 80%));
 
 
   background-repeat: no-repeat;
@@ -30,6 +30,45 @@
   background-color: darken($primary-background-color, 60%);
   }
 
-
 #content {
+  margin: 0px;
   text-align: center; }
+
+#notes {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  ul { text-align: justify;
+       padding-left: 70px; }
+  li {
+    list-style-type: none;
+    padding: 15px;
+    border-top: 1px dotted silver;;
+    border-bottom: 1px dotted silver;
+  }
+}
+
+#new_note {
+  margin-left: none;
+  margin-right: none;
+  textarea {
+    margin: none;
+    padding: 5px; }
+}
+
+.new_note {
+  margin: 0px;
+  padding: 0px;
+  display: inline; }
+
+
+.creation_time {
+     display: inline;
+     float: right;
+     color: white;
+     background: brown;
+     font-style: italic;
+     @include border-radius(2px);
+     width: 130px;
+     text-align: center;
+}

@@ -663,7 +663,6 @@ body.call-q #content {
 #sidebar {
   min-height: 320px;
   text-align: center;
-  margin-left: -2px;
   background: #b1b12c;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -679,7 +678,7 @@ body.call-q #content {
   background-image: -moz-linear-gradient(top, #888822 0%, #eeeebb 100%);
   background-image: linear-gradient(top, #888822 0%, #eeeebb 100%);
 }
-/* line 9, ../../app/stylesheets/partials/_sidebar.scss */
+/* line 8, ../../app/stylesheets/partials/_sidebar.scss */
 #sidebar h3 {
   background: #5f5f18;
   display: block;
@@ -742,7 +741,62 @@ body.call-q #content {
   background-color: #5f5f18;
 }
 
-/* line 34, ../../app/stylesheets/partials/_app.scss */
+/* line 33, ../../app/stylesheets/partials/_app.scss */
 #content {
+  margin: 0px;
+  text-align: center;
+}
+
+/* line 37, ../../app/stylesheets/partials/_app.scss */
+#notes {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+/* line 41, ../../app/stylesheets/partials/_app.scss */
+#notes ul {
+  text-align: justify;
+  padding-left: 70px;
+}
+/* line 43, ../../app/stylesheets/partials/_app.scss */
+#notes li {
+  list-style-type: none;
+  padding: 15px;
+  border-top: 1px dotted silver;
+  border-bottom: 1px dotted silver;
+}
+
+/* line 51, ../../app/stylesheets/partials/_app.scss */
+#new_note {
+  margin-left: none;
+  margin-right: none;
+}
+/* line 54, ../../app/stylesheets/partials/_app.scss */
+#new_note textarea {
+  margin: none;
+  padding: 5px;
+}
+
+/* line 59, ../../app/stylesheets/partials/_app.scss */
+.new_note {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+/* line 65, ../../app/stylesheets/partials/_app.scss */
+.creation_time {
+  display: inline;
+  float: right;
+  color: white;
+  background: brown;
+  font-style: italic;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  width: 130px;
   text-align: center;
 }
