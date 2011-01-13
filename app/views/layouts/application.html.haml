@@ -23,7 +23,9 @@
             = link_to "Sign in", new_user_session_path
             |
             = link_to "Sign up", new_user_registration_path
-        %h1 Call-Q
+
+        #logo
+          %h1= link_to "Call-Q", new_phone_path
       #content
         #notification
           - flash.each do |name, msg|
