@@ -1,3 +1,59 @@
+@mixin button {
+  background: #eee;
+  background: -moz-linear-gradient(0% 100% 90deg, #bfbfbf, #eee);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#bfbfbf));
+  border: 1px solid #ccc;
+  @include border-radius(3px);
+  -moz-box-shadow: inset 0 0 5px #f5f5f5;
+  -webkit-box-shadow: inset 0 0 5px #f5f5f5;
+  box-shadow: inset 0 0 5px #f5f5f5;
+  color: #333;
+  font-family: "Helvetica Nue", Helvetica, "lucida grande", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 0;
+  text-align: center;
+  text-shadow: 0 1px 0px #eee;
+  width: 150px;
+  &:hover {
+    background: #dfdfdf;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dfdfdf), to(#aaa));
+    background: -moz-linear-gradient(0% 100% 90deg, #aaa, #dfdfdf);
+    -moz-box-shadow: inset 0 0 5px #e5e5e5;
+    -webkit-box-shadow: inset 0 0 5px #e5e5e5;
+    box-shadow: inset 0 0 5px #e5e5e5;
+  }
+}
+
+input[type='text'], textarea {
+  @include border-radius(3px);
+  background: white;
+  -webkit-box-shadow: inset 0px 0px 5px 0px silver;
+  -moz-box-shadow: inset 0px 0px 5px silver;
+  box-shadow: inset 0px 0px 5px silver;
+}
+
+input[type='submit'] {
+  @include button; }
+
+.edit_phone label {
+  @include border-left-radius(15px);
+  background: #63a62f;
+  padding: 7px 6px 6px 15px;
+  -webkit-box-shadow: inset 0 0 4px #eeb;
+  -moz-box-shadow: inset 0 0 4px #eeb;
+  margin: -4px;
+  color: white;
+  @include text-shadow(black); }
+
+.edit_phone {
+  input[type='text'] {
+    @include border-left-radius(0px);
+  }
+  input[type='submit'] {
+    margin-left: 5px; } }
+
 #logo h1 {
   @include alt;
   a { text-decoration: none;
@@ -13,8 +69,10 @@
   letter-spacing: 1.5px;
   color: #eeb;
   @include border-radius(5px);
-  @include box-shadow(silver);
-  @include text-shadow(black);
+  -moz-box-shadow: inset 0 0 5px silver;
+  -webkit-box-shadow: inset 0 0 5px silver;
+  box-shadow: inset 0 0 5px silver;
+  text-shadow: 0 1px 0px black;
   padding-left: 40px;
   background-image: url(../images/phone.png),
     -webkit-gradient(linear, left top, left bottom,
