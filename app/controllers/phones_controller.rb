@@ -12,4 +12,10 @@ class PhonesController < ApplicationController
   def show
     @phone = Phone.find(params[:id])
   end
+
+  def update
+    @phone = Phone.find(params[:id])
+    @phone.update_attributes(params[:phone])
+    redirect_to @phone, :notice => "Phone information was succesfully updated"
+  end
 end

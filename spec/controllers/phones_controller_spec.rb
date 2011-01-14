@@ -43,5 +43,26 @@ describe PhonesController do
     end
   end
 
+  describe "PUT update" do
+    before do
+      @number = Phone.create(:number => "123 567 9804")
+      attrs =  { 'name' => 'Jane Doe' }
+      put :update, :id => @number.id, 'phone' => attrs
+    end
+
+    it "updates the name for a phone number" do
+      @number.reload
+      @number.name.should == 'Jane Doe'
+    end
+
+    it "redirects to the phone page" do
+      response.should redirect_to(phone_path(@number))
+    end
+
+    it "sets the flash" do
+      flash[:notice].should =~ /Phone information was succesfully updated/
+    end
+  end
+
 
 end

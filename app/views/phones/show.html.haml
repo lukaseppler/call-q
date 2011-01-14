@@ -1,9 +1,13 @@
 %h1 Make that call!
-- if @phone.name
-  %b Name
-  %br=  @phone.name
 
 = link_to "Call #{formatted_phone @phone.number}", "callto://#{@phone.number}", :id => "call-button"
+
+%p
+= form_for @phone do |f|
+  = f.label :name
+  %br
+  = f.text_field :name
+  = f.submit "Update name"
 
 %p
   = render :partial => "notes/noteboard", :locals => { :phone => @phone }
