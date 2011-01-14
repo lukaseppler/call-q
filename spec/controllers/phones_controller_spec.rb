@@ -64,5 +64,40 @@ describe PhonesController do
     end
   end
 
+  describe "GET search" do
+    before do
+      @phone = Phone.create!(:number => '+41 123 45 980', :name => "Anne")
+    end
 
+    it "allows to search by phone number" do
+      get :search, :q => '41-123-45-980'
+      assigns(:phone).should == @phone
+    end
+
+    it "allows to search by name" do
+      get :search, :q => 'Anne'
+      assigns(:phone).should == @phone
+    end
+
+    context "when found" do
+      it "redirects to the show page for the phone" do
+        get :search, :q => 'Anne'
+        response.should redirect_to(phone_path(@phone))
+      end
+    end
+
+    context "when not found" do
+      it "redirects to the new phone page" do
+        get :search, :q => "Julianne"
+        response.should redirect_to(new_phone_path)
+      end
+
+      it "sets the flash" do
+        get :search, :q => "Julianne"
+        flash[:alert].should =~ /Phone wasn't found/
+      end
+    end
+
+
+  end
 end

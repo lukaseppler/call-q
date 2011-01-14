@@ -1,9 +1,11 @@
 CallQ::Application.routes.draw do
   devise_for :users
   root :to => "phones#new"
+  match 'phones/search' => "phones#search"
   resources :phones do
     resources :notes
   end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
