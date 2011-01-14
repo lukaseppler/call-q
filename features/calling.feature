@@ -22,3 +22,10 @@ Feature: Calling a phone
       | phone_number     | formatted_phone |
       | +41 76373 0787   | +41 76 373 07 87 |
       | +41 76 373 07 87 | +41 76 373 07 87 |
+
+  Scenario: Describe a phone number with a name
+    Given I am on the homepage
+    When I call "+411 123 456 789"
+    And I fill in "Name" with "Jane Doe"
+    And I press "Update name"
+    Then I should see "Jane Doe"
