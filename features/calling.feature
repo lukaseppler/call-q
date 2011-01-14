@@ -28,4 +28,4 @@ Feature: Calling a phone
     When I call "+411 123 456 789"
     And I fill in "Name" with "Jane Doe"
     And I press "Update name"
-    Then I should see "Jane Doe"
+    Then I should see "Phone information was succesfully updated"
