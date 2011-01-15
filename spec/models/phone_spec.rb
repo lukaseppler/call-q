@@ -12,4 +12,18 @@ describe Phone do
     phone_number = Phone.create(:number => number)
     phone_number.id.should == '1234567890'
   end
+
+  context "valid" do
+    it "with a number containing digits, plus sign parentheses and spaces" do
+      phone = Phone.new(:number => '456 903 4567')
+      phone.should be_valid
+    end
+  end
+
+  context "invalid" do
+    it "with a number that contains all letters and no numbers" do
+      phone = Phone.new(:number => 'AAAAAXXXXX')
+      phone.should_not be_valid
+    end
+  end
 end
