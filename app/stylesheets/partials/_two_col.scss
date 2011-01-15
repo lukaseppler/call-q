@@ -32,7 +32,6 @@ body.call-q {
     $sidebar-columns: floor(($blueprint-grid-columns - 1) / 3);
     @include column($sidebar-columns, true); }
   #content {
-    //padding-top: 30px;
     $content-columns: ceil(2 * $blueprint-grid-columns / 3);
     //$content-columns: 24;
     // true means it's the last column in the row
@@ -40,7 +39,8 @@ body.call-q {
     @include append(1); } }
 
 #container > header {
-  @include column($blueprint-grid-columns); }
+  @include column($blueprint-grid-columns);
+  margin-bottom: 30px; }
 
 #container > footer {
   @include column($blueprint-grid-columns);

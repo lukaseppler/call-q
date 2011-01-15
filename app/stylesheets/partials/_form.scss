@@ -10,35 +10,3 @@
 
 #flash_alert, #flash_error {
   @include error; }
-
-#new_phone {
-  input[type='tel'] {
-    text-align: center;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    width: 300px;
-    @include border-radius(5px);
-    @include box-shadow;
-    border: none;
-    padding: 5px;
-    @include linear-gradient(color-stops($primary-background-color, white));
- }
-  #phone_submit {
-    margin-top: 30px;
-    padding: 10px 50px 10px 50px;
-    border: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    @include box-shadow;
-    @include text-shadow(black);
-    @include border-radius(5px);
-    @include linear-gradient(color-stops(
-             darken($primary-background-color, 60%),
-             darken($primary-background-color, 80%)));
-
-
-    }
-}

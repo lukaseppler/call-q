@@ -26,6 +26,36 @@
   }
 }
 
+input[type='submit'] {
+  @include button;
+}
+
+.phone-button {
+  @include button;
+  @include border-radius(5px);
+  font-size: 20px;
+  margin-left: 15px;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: inherit;
+  background-image: none;
+  background-repeat: no-repeat;
+  border: none;
+  color: #eeb;
+  text-shadow: 0 1px 0px black;
+  @include linear-gradient(color-stops(darken($primary-background-color, 60%),
+				       darken($primary-background-color, 80%)));
+  &:hover {
+    background-repeat: no-repeat;
+    color: white;
+    @include linear-gradient(color-stops(darken($primary-background-color, 40%),
+					 darken($primary-background-color, 60%))); }
+ }
+
+button:hover,
+input[type='submit']:hover {
+  cursor:pointer; }
+
 input[type='text'], textarea {
   @include border-radius(3px);
   background: white;
@@ -33,9 +63,6 @@ input[type='text'], textarea {
   -moz-box-shadow: inset 0px 0px 5px silver;
   box-shadow: inset 0px 0px 5px silver;
 }
-
-input[type='submit'] {
-  @include button; }
 
 .edit_phone label {
   @include border-left-radius(15px);
@@ -59,21 +86,7 @@ input[type='submit'] {
   a { text-decoration: none;
       color: inherit; } }
 
-#call-button {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 20px 8px 20px;
-  letter-spacing: 1.5px;
-  color: #eeb;
-  @include border-radius(5px);
-  -moz-box-shadow: inset 0 0 5px silver;
-  -webkit-box-shadow: inset 0 0 5px silver;
-  box-shadow: inset 0 0 5px silver;
-  text-shadow: 0 1px 0px black;
-  padding-left: 40px;
+.call-icon {
   background-image: url(../images/phone.png),
     -webkit-gradient(linear, left top, left bottom,
       from(darken($primary-background-color, 60%)),
@@ -81,28 +94,68 @@ input[type='submit'] {
   background-image: url(../images/phone.png),
     -moz-linear-gradient(top, darken($primary-background-color, 60%),
 			      darken($primary-background-color, 80%));
-
-
   background-repeat: no-repeat;
   background-position: 2% 50%;
-  background-color: darken($primary-background-color, 60%);
-  }
 
+}
+
+#call-button {
+  @extend .call-icon;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px 8px 40px;
+  letter-spacing: 1;
+  color: #eeb;
+  @include border-radius(5px);
+  -moz-box-shadow: inset 0 0 5px silver;
+  -webkit-box-shadow: inset 0 0 5px silver;
+  box-shadow: inset 0 0 5px silver;
+  text-shadow: 0 1px 0px black;
+  background-color: darken($primary-background-color, 60%);
+}
+
+#phone_submit {
+  clear: none;
+  white-space: no-wrap;
+  margin-top: 30px; }
+
+.actions {
+  div {
+    display: inline; } }
+
+
+#new_phone #phone_submit, #notes-button {
+  @extend .phone-button;
+}
 #content {
   margin: 0px;
   text-align: center; }
 
 #notes {
+  @include border-radius(10px);
   margin: 0px;
-  padding: 0px;
+  margin-top: 40px;
+  padding-bottom: 5px;
   text-align: center;
-  ul { text-align: justify;
-       padding-left: 70px; }
+//  background: rgba(4, 6, 4, .5);
+  h2 {
+  //  color: white;
+  //  background: rgba(0,0,0, .5);
+    @include border-top-radius(10px); }
+  ul {
+  font-family: sans-serif;
+  margin-top: 30px;
+  text-align: justify;
+  //-webkit-transform: rotate(-5deg);
+  // padding-left: 70px; }
+  }
   li {
     list-style-type: none;
     padding: 15px;
-    border-top: 1px dotted silver;;
-    border-bottom: 1px dotted silver;
+    border-bottom: 1px solid silver;
   }
 }
 
@@ -131,5 +184,16 @@ input[type='submit'] {
      text-align: center;
 }
 
-button:hover, input[type='submit']:hover {
-  cursor:pointer; }
+#new_phone {
+  input[type='tel'] {
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 420px;
+    @include border-radius(5px);
+    @include box-shadow;
+    border: none;
+    padding: 5px;
+    @include linear-gradient(color-stops($primary-background-color, white)); } }
