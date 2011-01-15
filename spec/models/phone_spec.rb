@@ -13,6 +13,15 @@ describe Phone do
     phone_number.id.should == '1234567890'
   end
 
+  it "contains notes for the phone number" do
+    phone = Phone.create!(:number => '123789456')
+    phone.notes.create!(:content => 'A sample note')
+    phone.save
+    phone.reload
+    phone.should have(1).note
+    phone.notes.first.content.should == 'A sample note'
+  end
+
   context "valid" do
     it "with a number containing digits, plus sign parentheses and spaces" do
       phone = Phone.new(:number => '456 903 4567')
