@@ -123,8 +123,8 @@ input[type='text'], textarea {
   margin-top: 30px; }
 
 .actions {
-  div {
-    display: inline; } }
+    display: inline;
+    div { display: inline; } }
 
 
 #new_phone #phone_submit, #notes-button {
