@@ -5,8 +5,11 @@ class PhonesController < ApplicationController
 
   def create
     @phone = Phone.new(params[:phone])
-    @phone.save
-    redirect_to @phone
+    if @phone.save
+      redirect_to @phone
+    else
+      render 'new'
+    end
   end
 
   def show

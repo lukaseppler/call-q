@@ -41,6 +41,13 @@ describe PhonesController do
         response.should redirect_to(phone_path(normalized_phone @phone[:number]))
       end
     end
+
+    context "given an invalid phone number" do
+      it "renders the new template" do
+        post :create, :phone => { :number => "AAAAAAA" }
+        response.should render_template('new')
+      end
+    end
   end
 
   describe "PUT update" do
