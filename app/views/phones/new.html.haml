@@ -4,4 +4,6 @@
   = f.phone_field :number, :placeholder => "Hint: try your own mobile",
       :autofocus => true
   %br
-  = f.submit "Call"
+    .actions
+      = f.submit "Call"
+      = button_to "Notes", "#", :id => "notes-button"
