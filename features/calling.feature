@@ -27,5 +27,5 @@ Feature: Calling a phone
     Given I am on the homepage
     When I call "+411 123 456 789"
     And I fill in "Name" with "Jane Doe"
-    And I press "Update name"
+    And I press "Update"
     Then I should see "Phone information was succesfully updated"

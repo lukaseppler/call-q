@@ -775,7 +775,7 @@ textarea {
 }
 
 /* line 71, ../../app/stylesheets/partials/_app.scss */
-.edit_phone label {
+.edit_phone > label {
   -moz-border-radius-topleft: 15px;
   -webkit-border-top-left-radius: 15px;
   -o-border-top-left-radius: 15px;
@@ -877,13 +877,13 @@ textarea {
   display: inline;
 }
 
-/* line 137, ../../app/stylesheets/partials/_app.scss */
+/* line 138, ../../app/stylesheets/partials/_app.scss */
 #content {
   margin: 0px;
   text-align: center;
 }
 
-/* line 141, ../../app/stylesheets/partials/_app.scss */
+/* line 142, ../../app/stylesheets/partials/_app.scss */
 #notes {
   margin: 0px;
   margin-top: 40px;
@@ -891,13 +891,12 @@ textarea {
   text-align: center;
 }
 
-/* line 148, ../../app/stylesheets/partials/_app.scss */
+/* line 149, ../../app/stylesheets/partials/_app.scss */
 .note {
   text-align: justify;
   border-bottom: 1px solid silver;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-bottom: 10px;
   padding: 15px;
 }
 
@@ -919,7 +918,7 @@ textarea {
   display: inline;
 }
 
-/* line 170, ../../app/stylesheets/partials/_app.scss */
+/* line 169, ../../app/stylesheets/partials/_app.scss */
 .creation_time {
   display: inline;
   float: right;
@@ -936,7 +935,7 @@ textarea {
   text-align: center;
 }
 
-/* line 182, ../../app/stylesheets/partials/_app.scss */
+/* line 181, ../../app/stylesheets/partials/_app.scss */
 #new_phone input[type='tel'] {
   text-align: center;
   height: 50px;

@@ -68,7 +68,7 @@ textarea {
   height: 50px !important;
 }
 
-.edit_phone label {
+.edit_phone > label {
   @include border-left-radius(15px);
   background: #63a62f;
   padding: 7px 6px 6px 15px;

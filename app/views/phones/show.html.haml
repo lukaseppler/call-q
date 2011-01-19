@@ -6,7 +6,8 @@
 = form_for @phone do |f|
   = f.label :name
   = f.text_field :name
-  = f.submit "Update name"
 
-%p
-  = render :partial => "notes/noteboard", :locals => { :phone => @phone }
+  %p
+    = render :partial => "notes/noteboard", :locals => { :phone => @phone, :f => f }
+
+  = f.submit "Update"

@@ -13,6 +13,6 @@ Feature: Notes
     And I have no notes for "+123 456 0987"
     When I call "+123 456 0987"
     And I fill in "Content" with "I'm talking with Emma about Node.js" within "#notes"
-    And I press "Create note"
-    Then I should see "Note was created. Keep describing!"
+    And I press "Update"
+    Then I should see "Phone information was succesfully updated"
     And I should see "I'm talking with Emma about Node.js"
