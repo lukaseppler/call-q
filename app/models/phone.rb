@@ -15,6 +15,8 @@ class Phone
   validates_format_of :number, :with => /[0-9\- \(\)\+]/
   accepts_nested_attributes_for :notes
 
+  delegate :ordered_notes, :to => :notes
+
   def self.search(query)
     if query =~ /[0-9\-]/
       where :number => Phony.normalize(query)
