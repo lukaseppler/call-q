@@ -1,0 +1,4 @@
+%div[note]
+  = note.content
+  .creation_time
+    = "#{distance_of_time_in_words_to_now(note.created_at)} ago"

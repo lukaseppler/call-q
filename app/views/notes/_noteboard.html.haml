@@ -1,14 +1,5 @@
 #notes
-  %h2 Notes
-  - if phone.notes.size > 0
-    %ul
-      - for note in phone.ordered_notes
-        %li
-          = note.content
-          .creation_time= "#{distance_of_time_in_words_to_now(note.created_at)} ago"
-
-  - else
-    You haven't added a note yet!
+  = render @phone.ordered_notes
 
   %br
   = form_for [phone, Note.new] do |f|

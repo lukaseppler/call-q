@@ -134,34 +134,24 @@ textarea {
 #new_phone #phone_submit, #notes-button {
   @extend .phone-button;
 }
+
 #content {
   margin: 0px;
   text-align: center; }
 
 #notes {
-  @include border-radius(10px);
   margin: 0px;
   margin-top: 40px;
   padding-bottom: 5px;
   text-align: center;
-//  background: rgba(4, 6, 4, .5);
-  h2 {
-  //  color: white;
-  //  background: rgba(0,0,0, .5);
-    @include border-top-radius(10px); }
-  ul {
-  font-family: sans-serif;
-  margin-top: 30px;
-  text-align: justify;
-  //-webkit-transform: rotate(-5deg);
-  // padding-left: 70px; }
-  }
-  li {
-    list-style-type: none;
-    padding: 15px;
-    border-bottom: 1px solid silver;
-  }
 }
+
+.note {
+  text-align: justify;
+  border-bottom: 1px solid silver;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px; }
 
 #new_note {
   margin-left: none;
@@ -175,7 +165,6 @@ textarea {
   margin: 0px;
   padding: 0px;
   display: inline; }
-
 
 .creation_time {
      display: inline;
