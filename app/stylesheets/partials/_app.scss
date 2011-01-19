@@ -64,6 +64,10 @@ input[type='text'], textarea {
   box-shadow: inset 0px 0px 5px silver;
 }
 
+textarea {
+  height: 50px !important;
+}
+
 .edit_phone label {
   @include border-left-radius(15px);
   background: #63a62f;

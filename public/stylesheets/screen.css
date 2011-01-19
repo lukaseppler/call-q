@@ -770,6 +770,11 @@ input[type='text'], textarea {
 }
 
 /* line 67, ../../app/stylesheets/partials/_app.scss */
+textarea {
+  height: 50px !important;
+}
+
+/* line 71, ../../app/stylesheets/partials/_app.scss */
 .edit_phone label {
   -moz-border-radius-topleft: 15px;
   -webkit-border-top-left-radius: 15px;
@@ -792,7 +797,7 @@ input[type='text'], textarea {
   text-shadow: black 1px 1px 1px;
 }
 
-/* line 78, ../../app/stylesheets/partials/_app.scss */
+/* line 82, ../../app/stylesheets/partials/_app.scss */
 .edit_phone input[type='text'] {
   -moz-border-radius-topleft: 0px;
   -webkit-border-top-left-radius: 0px;
@@ -807,25 +812,25 @@ input[type='text'], textarea {
   -khtml-border-bottom-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-/* line 81, ../../app/stylesheets/partials/_app.scss */
+/* line 85, ../../app/stylesheets/partials/_app.scss */
 .edit_phone input[type='submit'] {
   margin-left: 5px;
 }
 
-/* line 84, ../../app/stylesheets/partials/_app.scss */
+/* line 88, ../../app/stylesheets/partials/_app.scss */
 #logo h1 {
   color: #666666;
   font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
   font-style: italic;
   font-weight: normal;
 }
-/* line 86, ../../app/stylesheets/partials/_app.scss */
+/* line 90, ../../app/stylesheets/partials/_app.scss */
 #logo h1 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 89, ../../app/stylesheets/partials/_app.scss */
+/* line 93, ../../app/stylesheets/partials/_app.scss */
 .call-icon, #call-button {
   background-image: url(../images/phone.png), -webkit-gradient(linear, left top, left bottom, from(#5f5f18), to(#0e0e03)) !important;
   background-image: url(../images/phone.png), -moz-linear-gradient(top, #5f5f18, #0e0e03);
@@ -833,7 +838,7 @@ input[type='text'], textarea {
   background-position: 2% 50%;
 }
 
-/* line 102, ../../app/stylesheets/partials/_app.scss */
+/* line 106, ../../app/stylesheets/partials/_app.scss */
 #call-button {
   margin-top: 15px;
   font-size: 20px;
@@ -856,29 +861,29 @@ input[type='text'], textarea {
   background-color: #5f5f18;
 }
 
-/* line 120, ../../app/stylesheets/partials/_app.scss */
+/* line 124, ../../app/stylesheets/partials/_app.scss */
 #phone_submit {
   clear: none;
   white-space: no-wrap;
   margin-top: 30px;
 }
 
-/* line 125, ../../app/stylesheets/partials/_app.scss */
+/* line 129, ../../app/stylesheets/partials/_app.scss */
 .actions {
   display: inline;
 }
-/* line 127, ../../app/stylesheets/partials/_app.scss */
+/* line 131, ../../app/stylesheets/partials/_app.scss */
 .actions div {
   display: inline;
 }
 
-/* line 133, ../../app/stylesheets/partials/_app.scss */
+/* line 137, ../../app/stylesheets/partials/_app.scss */
 #content {
   margin: 0px;
   text-align: center;
 }
 
-/* line 137, ../../app/stylesheets/partials/_app.scss */
+/* line 141, ../../app/stylesheets/partials/_app.scss */
 #notes {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -891,7 +896,7 @@ input[type='text'], textarea {
   padding-bottom: 5px;
   text-align: center;
 }
-/* line 144, ../../app/stylesheets/partials/_app.scss */
+/* line 148, ../../app/stylesheets/partials/_app.scss */
 #notes h2 {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -906,38 +911,38 @@ input[type='text'], textarea {
   -khtml-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-/* line 148, ../../app/stylesheets/partials/_app.scss */
+/* line 152, ../../app/stylesheets/partials/_app.scss */
 #notes ul {
   font-family: sans-serif;
   margin-top: 30px;
   text-align: justify;
 }
-/* line 155, ../../app/stylesheets/partials/_app.scss */
+/* line 159, ../../app/stylesheets/partials/_app.scss */
 #notes li {
   list-style-type: none;
   padding: 15px;
   border-bottom: 1px solid silver;
 }
 
-/* line 162, ../../app/stylesheets/partials/_app.scss */
+/* line 166, ../../app/stylesheets/partials/_app.scss */
 #new_note {
   margin-left: none;
   margin-right: none;
 }
-/* line 165, ../../app/stylesheets/partials/_app.scss */
+/* line 169, ../../app/stylesheets/partials/_app.scss */
 #new_note textarea {
   margin: none;
   padding: 5px;
 }
 
-/* line 170, ../../app/stylesheets/partials/_app.scss */
+/* line 174, ../../app/stylesheets/partials/_app.scss */
 .new_note {
   margin: 0px;
   padding: 0px;
   display: inline;
 }
 
-/* line 176, ../../app/stylesheets/partials/_app.scss */
+/* line 180, ../../app/stylesheets/partials/_app.scss */
 .creation_time {
   display: inline;
   float: right;
@@ -954,7 +959,7 @@ input[type='text'], textarea {
   text-align: center;
 }
 
-/* line 188, ../../app/stylesheets/partials/_app.scss */
+/* line 192, ../../app/stylesheets/partials/_app.scss */
 #new_phone input[type='tel'] {
   text-align: center;
   height: 50px;
