@@ -27,7 +27,7 @@ describe PhonesController do
   describe "POST create" do
     context "given a valid phone number" do
       before(:each) do
-        @phone = { :number => '123 456 7890'}
+        @phone = { :number => '123 546 7890'}
       end
 
       it "stores it on the backend" do
