@@ -13,8 +13,8 @@ end
 
 group :development, :test do
   gem 'autotest'
-  gem 'capybara', '0.3.9'
-  gem 'cucumber', '>= 0.9.4'
+  gem 'capybara'
+  gem 'cucumber'
   gem 'cucumber-rails', '>= 0.3.0'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
